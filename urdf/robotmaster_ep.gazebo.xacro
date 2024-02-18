@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<robot name="gazebo_robomaster" xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:include filename="$(find robomaster_description)/urdf/_d435.gazebo.xacro"/>
+    <xacro:gazebo_d435 camera_name="d435" reference_link="d435_link" topics_ns="camera" depth_optical_frame="d435_depth_optical_frame" color_optical_frame="d435_color_optical_frame" infrared1_optical_frame="$d435_infra1_ir_optical_frame" infrared2_optical_frame="$d435_infra2_ir_optical_frame" publish_pointcloud="true"/>
+</robot>
